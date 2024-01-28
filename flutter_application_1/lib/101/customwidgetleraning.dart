@@ -14,7 +14,7 @@ class CustomWidgetLearning extends StatelessWidget {
         children: [
           Center(
             child: Padding(
-              padding: const EdgeInsets.symmetric(horizontal: 8),
+              padding: _PaddingUtility.normalPadding,
               child: SizedBox(
                 width: MediaQuery.of(context).size.width,
                 child: CustomFoodButton(
@@ -48,6 +48,7 @@ class _ColorUtility {
 class _PaddingUtility {
   static const EdgeInsets normalPadding = EdgeInsets.all(8.0);
   static const EdgeInsets normal2xPadding = EdgeInsets.all(16.0);
+  static const EdgeInsets verticalPadding = EdgeInsets.symmetric(vertical: 10);
 }
 
 class CustomFoodButton extends StatelessWidget {
