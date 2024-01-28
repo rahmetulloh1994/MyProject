@@ -28,6 +28,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demos',
       theme: ThemeData.dark().copyWith(
+        listTileTheme: ListTileThemeData(contentPadding: EdgeInsets.zero),
         progressIndicatorTheme:
             ProgressIndicatorThemeData(color: Colors.amber[400]),
         appBarTheme: AppBarTheme(
