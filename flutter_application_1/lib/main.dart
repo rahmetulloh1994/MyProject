@@ -8,6 +8,8 @@ import 'package:flutter_application_1/101/customwidgetleraning.dart';
 import 'package:flutter_application_1/101/demopage/demopagelearn.dart';
 import 'package:flutter_application_1/101/icon_learn.dart';
 import 'package:flutter_application_1/101/image_learn.dart';
+import 'package:flutter_application_1/101/indicator_learn.dart';
+import 'package:flutter_application_1/101/list_tile_learn.dart';
 import 'package:flutter_application_1/101/scaffold_learn.dart';
 import 'package:flutter_application_1/101/statelesswidgetlearn.dart';
 import 'package:flutter_application_1/101/text_learn.dart';
@@ -26,15 +28,16 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: 'Flutter Demo',
       theme: ThemeData.dark().copyWith(
+        progressIndicatorTheme:
+            ProgressIndicatorThemeData(color: Colors.amber[400]),
         appBarTheme: AppBarTheme(
           titleTextStyle: TextStyle(color: Colors.black, fontSize: 30),
           centerTitle: true,
-          backgroundColor: Colors.white,
           elevation: 0,
           systemOverlayStyle: SystemUiOverlayStyle.light,
         ),
       ),
-      home: CustomWidgetLearning(),
+      home: ListTileLearn(),
     );
   }
 }
