@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_application_1/product/custombutton.dart';
 
 class StatefullLearn extends StatefulWidget {
   const StatefullLearn({super.key});
@@ -9,7 +10,7 @@ class StatefullLearn extends StatefulWidget {
 
 class _StatefullLearnState extends State<StatefullLearn> {
   int counter = 0;
-  int _sayac = 0;
+
   void _increment(bool x) {
     setState(() {
       if (x) {
@@ -37,13 +38,7 @@ class _StatefullLearnState extends State<StatefullLearn> {
             ),
           ),
           Placeholder(),
-          ElevatedButton(
-              onPressed: () {
-                setState(() {
-                  ++_sayac;
-                });
-              },
-              child: Text("Merhaba $_sayac"))
+          CustomButton(),
         ],
       ),
     );
